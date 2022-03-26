@@ -1,0 +1,175 @@
+/*#FF7E09*/
+
+body {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+.feedback,
+.error {
+  color: #ff7e09;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.review-component .img-wrapper {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background: rgba(37, 60, 65, 0.719);
+  padding: 5px;
+}
+
+.review-component img {
+  width: 20px;
+  height: 20px;
+}
+
+.review-component,
+.thankyou-component {
+  width: 30%;
+  margin: auto;
+  min-height: 300px;
+  color: white;
+  background: rgba(0, 46, 58, 0.719);
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.review-component {
+  display: block;
+}
+
+.thankyou-component {
+  text-align: center;
+  display: none;
+}
+
+.component-content,
+.thankyou-content {
+  margin: 20px 0px;
+}
+
+.component-content p,
+.thankyou-content p {
+  padding: 10px 0px;
+  color: rgb(145, 145, 145);
+}
+
+.component-number {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rating-num {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  background: rgba(37, 60, 65, 0.719);
+}
+
+.rating-num:hover {
+  background: #eee;
+  color: #000;
+}
+
+.rating-num button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: rgb(145, 145, 145);
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  background: #ff7e09;
+  padding: 8px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  margin: 20px 0px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #ff7e09;
+}
+
+.feedback {
+  margin-top: 10px;
+  padding: 5px;
+  background: rgba(37, 60, 65, 0.719);
+  border-radius: 25px;
+}
+
+.error {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 1000px) {
+  .review-component,
+  .thankyou-component {
+    width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  .review-component,
+  .thankyou-component {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .review-component,
+  .thankyou-component {
+    width: 90%;
+  }
+}
+
+@media (max-width: 350px) {
+  .review-component,
+  .thankyou-component {
+    font-size: 0.8rem;
+    width: 95%;
+  }
+}
+
+@media (max-width: 300px) {
+  .component-number {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+  }
+}
